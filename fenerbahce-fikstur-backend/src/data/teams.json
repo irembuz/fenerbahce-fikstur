@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Fenerbahçe",
+      "shortName": "FB",
+      "logo": "https://example.com/fenerbahce-logo.png",
+      "city": "İstanbul",
+      "founded": 1907
+    },
+    {
+      "id": 2,
+      "name": "Galatasaray",
+      "shortName": "GS",
+      "logo": "https://example.com/galatasaray-logo.png",
+      "city": "İstanbul",
+      "founded": 1905
+    },
+    {
+      "id": 3,
+      "name": "Beşiktaş",
+      "shortName": "BJK",
+      "logo": "https://example.com/besiktas-logo.png",
+      "city": "İstanbul",
+      "founded": 1903
+    },
+    {
+      "id": 4,
+      "name": "Trabzonspor",
+      "shortName": "TS",
+      "logo": "https://example.com/trabzonspor-logo.png",
+      "city": "Trabzon",
+      "founded": 1967
+    },
+    {
+      "id": 5,
+      "name": "Başakşehir",
+      "shortName": "BŞK",
+      "logo": "https://example.com/basaksehir-logo.png",
+      "city": "İstanbul",
+      "founded": 1990
+    },
+    {
+      "id": 6,
+      "name": "Antalyaspor",
+      "shortName": "ANT",
+      "logo": "https://example.com/antalyaspor-logo.png",
+      "city": "Antalya",
+      "founded": 1966
+    },
+    {
+      "id": 7,
+      "name": "Real Madrid",
+      "shortName": "RMA",
+      "logo": "https://example.com/realmadrid-logo.png",
+      "city": "Madrid",
+      "founded": 1902
+    },
+    {
+      "id": 8,
+      "name": "Kayserispor",
+      "shortName": "KAY",
+      "logo": "https://example.com/kayserispor-logo.png",
+      "city": "Kayseri",
+      "founded": 1966
+    },
+    {
+      "id": 9,
+      "name": "Sivasspor",
+      "shortName": "SVS",
+      "logo": "https://example.com/sivasspor-logo.png",
+      "city": "Sivas",
+      "founded": 1967
+    }
+  ]

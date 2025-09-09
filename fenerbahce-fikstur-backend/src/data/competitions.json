@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Süper Lig",
+    "shortName": "SL",
+    "type": "league",
+    "season": "2023-2024",
+    "country": "Türkiye"
+  },
+  {
+    "id": 2,
+    "name": "UEFA Avrupa Ligi",
+    "shortName": "UEL",
+    "type": "european",
+    "season": "2023-2024",
+    "country": "Avrupa"
+  },
+  {
+    "id": 3,
+    "name": "Türkiye Kupası",
+    "shortName": "TK",
+    "type": "cup",
+    "season": "2023-2024",
+    "country": "Türkiye"
+  }
+]
