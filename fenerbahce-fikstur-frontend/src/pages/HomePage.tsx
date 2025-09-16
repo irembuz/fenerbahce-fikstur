@@ -30,20 +30,15 @@ const HomePage: React.FC = () => {
   }, [filter]);
 
   return (
-    <div className="max-w-5xl mx-auto p-4 md:p-6">
-      <header className="text-center mb-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-sky-700">Fenerbahçe Fikstür</h1>
-        <p className="text-gray-500">Maçlar, skorlar ve durumlar</p>
-      </header>
-
+    <div className="w-full px-4 md:px-6 py-4">
       <div className="flex flex-wrap gap-2 justify-center mb-6">
         {(['all', 'upcoming', 'finished', 'live'] as const).map((key) => (
           <button
             key={key}
             onClick={() => setFilter(key)}
             className={`px-4 py-2 rounded-full border transition ${filter === key
-                ? 'bg-sky-600 text-white border-sky-600'
-                : 'bg-white text-sky-700 border-sky-600 hover:bg-sky-50'
+              ? 'bg-sky-600 text-white border-sky-600'
+              : 'bg-white text-sky-700 border-sky-600 hover:bg-sky-50'
               }`}
           >
             {key === 'all' && 'Tümü'}

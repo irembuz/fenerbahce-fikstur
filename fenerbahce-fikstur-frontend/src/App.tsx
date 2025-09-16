@@ -1,10 +1,13 @@
+import Header from './components/common/Header';
 import HomePage from './pages/HomePage';
-import './App.css';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <HomePage />
+    <div className="min-h-screen bg-slate-50">
+      <Header />
+      <main className="pt-2">
+        <HomePage />
+      </main>
     </div>
   );
 }
