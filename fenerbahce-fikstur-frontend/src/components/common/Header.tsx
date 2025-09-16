@@ -1,6 +1,13 @@
 import React from 'react';
 
-const Header: React.FC = () => {
+type Filter = 'all' | 'upcoming' | 'finished' | 'live';
+
+type Props = {
+  filter: Filter;
+  onFilterChange: (value: Filter) => void;
+};
+
+const Header: React.FC<Props> = ({ filter, onFilterChange }) => {
   return (
     <header className="sticky top-0 z-30 shadow bg-[#0a1f44] w-full">
       <div className="w-full px-4 sm:px-6">
@@ -10,6 +17,24 @@ const Header: React.FC = () => {
               <h1 className="text-white text-lg sm:text-xl font-bold">Fenerbahçe Fikstür</h1>
               <p className="text-xs text-[#f7d100]/90">Maçlar, skorlar ve durumlar</p>
             </div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {(['all', 'upcoming', 'finished', 'live'] as const).map((key) => (
+              <button
+                key={key}
+                onClick={() => onFilterChange(key)}
+                className={`px-3 py-1.5 rounded-full border text-sm transition ${
+                  filter === key
+                    ? 'bg-[#f7d100] text-[#0a2a6b] border-[#f7d100] shadow'
+                    : 'bg-[#f7d100] text-[#0a2a6b] border-[#f7d100] hover:bg-[#f7d100]/90'
+                }`}
+              >
+                {key === 'all' && 'Tümü'}
+                {key === 'upcoming' && 'Gelecek'}
+                {key === 'finished' && 'Bitmiş'}
+                {key === 'live' && 'Canlı'}
+              </button>
+            ))}
           </div>
         </div>
       </div>
